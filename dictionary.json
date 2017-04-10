@@ -1,0 +1,190 @@
+{
+    "name": "Example Spacecraft",
+    "key": "sc",
+    "measurements": [
+        {
+            "name": "Fuel",
+            "key": "prop.fuel",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "kilograms",
+                    "format": "float",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Thrusters",
+            "key": "prop.thrusters",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "format": "enum",
+                    "enumerations": [
+                        {
+                            "string": "On",
+                            "value": 1
+                        },
+                        {
+                            "string": "Off",
+                            "value": 0
+                        }
+                    ],
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Received",
+            "key": "comms.recd",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "bytes",
+                    "format": "integer",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sent",
+            "key": "comms.sent",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "bytes",
+                    "format": "integer",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Generator Temperature",
+            "key": "pwr.temp",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "℃",
+                    "format": "float",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Generator Current",
+            "key": "pwr.c",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Amps",
+                    "format": "float",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Generator Voltage",
+            "key": "pwr.v",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "float",
+                    "hints": {
+                        "y": 1,
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "x": 1,
+                        "domain": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
