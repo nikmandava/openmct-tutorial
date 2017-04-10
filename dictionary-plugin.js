@@ -1,5 +1,8 @@
 function DictionaryPlugin() {
-    return function install() {
-        console.log("DictionaryPlugin is ready to go!!!");
+    return function install(openmct) {
+        openmct.objects.addRoot({
+          namespace: 'example.taxonomy',
+          key: 'spacecraft'
+        });
     }
 };
