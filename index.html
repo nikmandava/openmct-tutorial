@@ -4,6 +4,7 @@
     <title>Open MCT Tutorials</title>
     <script src="node_modules/openmct/dist/openmct.js"></script>
     <script src="lib/http.js"></script>
+    <script src="dictionary-plugin.js"></script>
 </head>
 <body>
     <script>
@@ -12,6 +13,8 @@
         openmct.install(openmct.plugins.MyItems());
         openmct.install(openmct.plugins.Espresso());
         openmct.install(openmct.plugins.UTCTimeSystem());
+        // installing a new plugin to check plugin execution
+        openmct.install(DictionaryPlugin());
         openmct.start();
     </script>
 </body>
